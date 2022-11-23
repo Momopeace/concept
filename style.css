@@ -1,46 +1,90 @@
-html {height: 100vh;}
-body {height: 100%;
+body {
+height: 100vh;
 background-color: whitesmoke;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 10px;
+}
 
 header {
     display: flex;
 	justify-content: space-between;
-	/* align-items: center; */
     background-color: darkgrey;
+    height: 20px;
 }
 .logo {
-    height: 50px;
-    width: 50px;
+    height: 20px;
+    width: 20px;
     background-image: url(images/logo.jpg);
     background-size: cover;
     margin-right: 5px;
 }
 
+nav li{
+    list-style: none;
+}
+
 .item {
 	display: inline-block;
-    font-size: 8px;
+    font-size: 9px;
     /* margin: 0.5px; */
 }
 
 .presentation {
-    background-color: darkgrey;
-    margin-top: 20px; 
 
+    background-color: darkgrey;
+    margin-top: 5px; 
 }
+
 h1 {
     text-align: center;
     font-size: 30px;
 }
+
 img {
     width : 90px;
     height : 90px;
     border-radius: 10px;
     border-color: brown;
+    margin-top: 10px;
     }
 
+main {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ min-height: 450px;
+}
+
+.paragraphes {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    justify-content: space-evenly;
+    align-content: space-around;
+    margin:10px 10px 10px 10px;
+}         
+
+
+h3 {
+    font-size: 15px;
+}
+
+
 footer {
-        display: flex;  
-        background-color: darkgrey;
-        
+    display: flex; 
+    background-color: darkgrey;
+    height: 20px;
 }    
+
+@media (min-width:768px){
+    .paragraphes {
+        display: flex;
+        flex-direction:column;
+        width: 200px;
+        justify-content: space-evenly;
+        align-content: space-around;
+    
+    }      
+
+}
