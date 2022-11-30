@@ -2,7 +2,7 @@ body {
 height: 100vh;
 background-color: whitesmoke;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 10px;
+font-size: 15px;
 }
 
 header {
@@ -10,6 +10,9 @@ header {
 	justify-content: space-between;
     background-color: darkgrey;
     height: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .logo {
     height: 20px;
@@ -17,6 +20,8 @@ header {
     background-image: url(images/logo.jpg);
     background-size: cover;
     margin-right: 5px;
+    border-radius: 10px;
+
 }
 
 nav li{
@@ -30,12 +35,15 @@ nav li{
 }
 
 .presentation {
-
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: darkgrey;
-    margin-top: 5px; 
+    margin-top: 5px;
+    border-radius: 10px; 
 }
 
 h1 {
+    padding-top: 10px;
     text-align: center;
     font-size: 30px;
 }
@@ -73,45 +81,112 @@ h3 {
 
 
 footer {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex; 
     background-color: darkgrey;
     height: 20px;
-    margin:0px
+    margin:0px;
+    border-radius:10px;
 }    
 
 @media (min-width:768px){
+
+    body {
+        height: 100vh;
+        background-color: whitesmoke;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 18px;
+        }
     
     header {
         display: flex;
         justify-content: space-between;
         background-color: darkgrey;
-        height: 20px;
+        height: 70px;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
-   
+    .logo {
+        height: 70px;
+        width: 70px;
+        background-image: url(images/logo.jpg);
+        background-size: cover;
+        margin-right: 5px;
+        border-radius: 10px;
+    }
+    nav li{
+        list-style: none;
+        margin-top: 30px;
+    }
     
-    main {
-        display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    min-height: 650px;
-    margin:0;
+    .item {
+        display: inline-block;
+        font-size: 15px;
+        /* margin: 0.5px; */
     }
 
+
+    .presentation {
+
+        background-color: darkgrey;
+        margin-top: 10px;
+        height:250px ; 
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+
+
+   
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            min-height: 600px;
+            margin-top: 30px;    
+        }    
+    
+
     .paragraphes {
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         width: 200px;
         justify-content: space-evenly;
         align-content: space-around;
-        margin:10px 10px 10px 10px;
-      }    
+        height:500px;
+
+      }  
+      
+    img {
+        width : 130px;
+        height : 130px;
+        border-radius: 10px;
+        border-color: brown;
+        margin-top: 60px;
+        } 
 
     footer { 
     background-color: darkgrey;
     height: 40px;
-    margin:0px;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     }
     
 
