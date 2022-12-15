@@ -13,3 +13,12 @@ btnClose.addEventListener("click", () => {
   btnOpen.classList.remove("hidden");
   menuMobile.style.left = "-150px";
 });
+
+// formulaire de conctat
+const message = "Merci pour votre message";
+
+document.getElementById("contact form");
+document.addEventListener("submit", function (event) {
+  event.preventDefault();
+  alert(message);
+});
